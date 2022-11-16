@@ -8,11 +8,11 @@ namespace WPFMotorTax.Models
 {
     public class UserModel
     {
-        public string Id { get; set; }
-        public string RegNo { get; set; }
-        public string PIN { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
+        public string regNo { get; set; }
+        public string pin { get; set; }
+        public string make { get; set; }
+        public string model { get; set; }
+        public string name { get; set; }
+        public string renewed { get; set; }
     }
 }

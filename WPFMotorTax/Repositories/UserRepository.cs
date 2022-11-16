@@ -25,7 +25,7 @@ namespace WPFMotorTax.Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "select *from [User] where username=@username and [password]=@password";
+                command.CommandText = "select * from [dbo].[user] where regNo=@username and [pin]=@password";
                 command.Parameters.Add("@username", SqlDbType.NVarChar).Value = credential.UserName;
                 command.Parameters.Add("@password", SqlDbType.NVarChar).Value = credential.Password;
                 validUser = command.ExecuteScalar() == null ? false : true;
@@ -46,7 +46,7 @@ namespace WPFMotorTax.Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "select *from [User] where username=@username";
+                command.CommandText = "select * from [dbo.user] where regNo=@username";
                 command.Parameters.Add("@username", SqlDbType.NVarChar).Value = username;
                 using (var reader = command.ExecuteReader())
                 {
@@ -54,12 +54,12 @@ namespace WPFMotorTax.Repositories
                     {
                         user = new UserModel()
                         {
-                            Id = reader[0].ToString(),
-                            RegNo = reader[1].ToString(),
-                            PIN = string.Empty,
-                            Name = reader[3].ToString(),
-                            LastName = reader[4].ToString(),
-                            Email = reader[5].ToString(),
+                            regNo = reader[0].ToString(),
+                            pin = reader[1].ToString(),
+                            make = reader[2].ToString(),
+                            model = reader[3].ToString(),
+                            name = reader[4].ToString(),
+                            renewed = reader[5].ToString(),
                         };
                     }
                 }
