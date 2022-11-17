@@ -7,10 +7,15 @@
         xmlns:viewModel="clr-namespace:WPFMotorTax.ViewModels"
         mc:Ignorable="d"
         Title="MainWindowView" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" Initialized="Window_Initialized">
 
-    <Grid>
-        <Button Content="Renew Tax" HorizontalAlignment="Left" Margin="47,100,0,0" VerticalAlignment="Top" Width="169" Height="75"/>
-
+    <Grid Initialized="Grid_Initialized">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="449*"/>
+            <ColumnDefinition Width="243*"/>
+            <ColumnDefinition Width="102*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="regNoBox" HorizontalAlignment="Left" Height="38" Margin="281,144,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="regNoBox_Copy" HorizontalAlignment="Left" Height="38" Margin="256,10,0,0" TextWrapping="Wrap" Text="Renew Motor Tax" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

@@ -49,5 +49,10 @@ namespace WPFMotorTax.Views
         {
 
         }
+
+        private void btnLogin_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

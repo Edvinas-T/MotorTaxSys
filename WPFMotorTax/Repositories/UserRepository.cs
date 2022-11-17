@@ -38,7 +38,7 @@ namespace WPFMotorTax.Repositories
             throw new NotImplementedException();
         }
  
-        public UserModel GetByUsername(string username)
+        public UserModel GetByRegNo(string reg)
         {
             UserModel user = null;
             using (var connection = GetConnection())
@@ -47,7 +47,8 @@ namespace WPFMotorTax.Repositories
                 connection.Open();
                 command.Connection = connection;
                 command.CommandText = "select * from [dbo.user] where regNo=@username";
-                command.Parameters.Add("@username", SqlDbType.NVarChar).Value = username;
+                command.Parameters.Add("@username", SqlDbType.NVarChar).Value = reg;
+                
                 using (var reader = command.ExecuteReader())
                 {
                     if (reader.Read())

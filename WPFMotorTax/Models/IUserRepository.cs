@@ -13,7 +13,7 @@ namespace WPFMotorTax.Models
         void Add(UserModel userModel);
         void Edit(UserModel userModel);
         void Remove(int id);
-        UserModel GetByUsername(string username);
+        UserModel GetByRegNo(string regNo);
 
     }
 }
