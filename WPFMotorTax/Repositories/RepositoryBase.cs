@@ -13,6 +13,7 @@ namespace WPFMotorTax.Repositories
         public RepositoryBase()
         {
             _connectionString = "Server=tcp:motortaxserver1.database.windows.net,1433;Initial Catalog=motortax;Persist Security Info=False;User ID=adminlogin;Password=Adminpass1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            //Adminpassword1    for VM
         }
         protected SqlConnection GetConnection()
         {
