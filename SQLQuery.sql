@@ -1,0 +1,6 @@
+INSERT INTO users(regNo, pin, make, model, name ,renewed)
+VALUES ('131-KY-651','505121','BMW','X3','Shane Scanlon',1)
+INSERT INTO users(regNo, pin, make, model, name ,renewed)
+VALUES ('152-DB-621','302152','Toyota','Corolla','John Walsh',1)
+INSERT INTO users(regNo, pin, make, model, name ,renewed)
+VALUES ('192-WW-341','325152','Ford','Focus','Padraig Johnny',1)
