@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using WPFMotorTax.Models;
 
 namespace WPFMotorTax.Repositories.Tests
 {
@@ -17,7 +18,7 @@ namespace WPFMotorTax.Repositories.Tests
         {
             String RegNo = "192-WW-341";
             String PIN = "325152";
-            
+
             UserRepository user = new UserRepository();
             Assert.IsTrue(user.AuthenticateUser(new NetworkCredential(RegNo, PIN)));
         }

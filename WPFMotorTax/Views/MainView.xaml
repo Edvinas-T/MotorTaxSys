@@ -15,7 +15,10 @@
             <ColumnDefinition Width="243*"/>
             <ColumnDefinition Width="102*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="regNoBox" HorizontalAlignment="Left" Height="38" Margin="281,144,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="regNoBox" HorizontalAlignment="Left" Height="38" Margin="256,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
         <TextBox x:Name="regNoBox_Copy" HorizontalAlignment="Left" Height="38" Margin="256,10,0,0" TextWrapping="Wrap" Text="Renew Motor Tax" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="regNoBox_Copy1" HorizontalAlignment="Left" Height="38" Margin="256,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="regNoBox_Copy2" HorizontalAlignment="Left" Height="38" Margin="256,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="regNoBox_Copy3" HorizontalAlignment="Left" Height="38" Margin="256,209,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="335" FontSize="20" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
